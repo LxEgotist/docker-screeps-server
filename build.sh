@@ -1,5 +1,5 @@
-version=$(curl https://raw.githubusercontent.com/screeps/screeps/master/package.json | jq -r .version)
-git clone git@github.com:ags131/docker-screeps-server
+version=4.2.3
+git clone git@github.com:pjxlxt/docker-screeps-server.git
 pushd docker-screeps-server
 if [[ "$1" == "ptr" ]]; then
 	version=ptr
